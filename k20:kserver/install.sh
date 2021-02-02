@@ -16,3 +16,7 @@ done
 kadmin.local -q "addprinc -pw kmarta marta/admin"
 kadmin.local -q "addprinc -pw ksuper super"
 
+for user in kuser{01..03}
+do
+  kadmin.local -q "addprinc -pw $user $user"
+done
