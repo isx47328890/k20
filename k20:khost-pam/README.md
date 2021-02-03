@@ -4,10 +4,15 @@
 
 ### Autenticació
 
-* **[isx47328890/k20:khost-pam] 
+* **[isx47328890/k20:khost-pam]** - host client de kerberos amb pam. El servidor al que contacta s'ha de dir kserver.edt.org
+
+Accedir al kserver de AWS:
+
+* posar a /etc/hosts l'adreça IP del servidor
 
 
 ```bash
-docker run --rm --name khost-pam.edt.org -h khost-pam.edt.org --net 2hisix -it isx47328890/k20:khost-pam
+docker run --rm --name khost.edt.org -h khost.edt.org --net 2hisix -it isx47328890/k20:khost-pam
 ```
+[isx47328890/k20:khost-pam: https://hub.docker.com/u/isx47328890
 
