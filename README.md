@@ -33,7 +33,7 @@ docker run --rm --name ldap.edt.org -h ldap.edt.org --net 2hisix -p 389:389 -d i
 
 **Kerberos server**
 ```
-docker run --rm --name kserver.edt.org -h kserver.edt.org --net 2hisix -d isx47328890/k20:kserver
+docker run --rm --name kserver.edt.org -h kserver.edt.org --net 2hisix -p 88:88 -p 464:464 -p 749:749 -d isx47328890/k20:kserver
 ```
 [logo]: https://www.diegocalvo.es/wp-content/uploads/2018/08/logo_kerberos.jpg
 [Dockerhub de isx47328890]:https://hub.docker.com/r/isx47328890/k20

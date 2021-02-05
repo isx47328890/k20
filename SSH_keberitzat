@@ -1,0 +1,9 @@
+# SSH Kerberitzat
+
+1) servidor SSH
+2) instal·lar el paquet krb5-workstation
+3) configurar com calient de kerberos: /etc/krb5.conf
+4) crear un principal del servidor host/FQDN-del-servidor
+5) exportar aquesta clua al servidor:
+  /etc/krb5.keytab
+6) configuració servei sshd (la config sshd_config) per indicar autenticació GSSAPI
