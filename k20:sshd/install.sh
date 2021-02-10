@@ -6,7 +6,7 @@ cp /opt/docker/krb5.conf /etc/krb5.conf
 bash /opt/docker/auth.sh
 ssh-keygen -A
 cp /opt/docker/sshd_config /etc/ssh/sshd_config
-
+cp /opt/docker/ssh_config /etc/ssh/ssh_config
 kadmin -p admin -w kadmin -q "ktadd -k /etc/krb5.keytab host/sshd.edt.org"
 
 
